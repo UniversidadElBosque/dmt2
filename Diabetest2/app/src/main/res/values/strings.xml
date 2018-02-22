@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mi DT2 con Psicoeducación</string>
+    <string name="Hombre" />
+    <string name="title_activity_menu">Menu</string>
+    <string name="acciones">Configuracion</string>
+    <string name="title_activity_prueba_menu">PruebaMenu</string>
+</resources>

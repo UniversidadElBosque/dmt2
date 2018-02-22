@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.comunes.Usuario">
+
+    <EditText
+        android:id="@+id/id_nombresPa"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_x="212dp"
+        android:layout_y="245dp"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_clavePa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="212dp"
+        android:layout_y="197dp"
+        android:ems="10"
+        android:hint="Crear clave"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="297dp"
+        android:layout_y="526dp"
+        android:onClick="procesar"
+        android:text="Guardar y continuar" />
+
+    <EditText
+        android:id="@+id/id_ciudad"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_x="389dp"
+        android:layout_y="459dp"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_telefono"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_x="213dp"
+        android:layout_y="408dp"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/id_pais"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_x="213dp"
+        android:layout_y="459dp"
+        android:ems="10"
+        android:hint="País"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_apellidosPa"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_x="212dp"
+        android:layout_y="290dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_sexo"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_x="212dp"
+        android:layout_y="335dp"
+        android:ems="10"
+        android:hint="Sexo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_direccion"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_x="337dp"
+        android:layout_y="408dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="512dp"
+        android:layout_height="wrap_content"
+        android:layout_x="129dp"
+        android:layout_y="151dp"
+        android:text="Para poder brindarte el tratamiento adecuado, debes llenar los siguientes datos."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="524dp"
+        android:layout_height="wrap_content"
+        android:layout_x="121dp"
+        android:layout_y="122dp"
+        android:text="!! YA NOS CONOCES... SOMOS TUS ALIADOS EN SALUD Y BIENESTAR!!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="266dp"
+        android:layout_y="49dp"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/logobosque" />
+
+
+</AbsoluteLayout>

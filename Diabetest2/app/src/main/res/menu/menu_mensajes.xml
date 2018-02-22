@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="juan.example.com.diabetest2.comunes.Mensajes">
+    <item
+        android:id="@+id/id_boton_eliminar_mensajes"
+        android:orderInCategory="100"
+        android:title="Eliminar mensajes"
+        app:showAsAction="never" />
+
+</menu>
+

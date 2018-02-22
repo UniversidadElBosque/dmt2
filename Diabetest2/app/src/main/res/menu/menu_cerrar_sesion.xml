@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="juan.example.com.diabetest2.profesional.MenuProfesional">
+    <item
+        android:id="@+id/id_boton_salir"
+        android:orderInCategory="100"
+        android:title="Cerrar sesión"
+        app:showAsAction="never" />
+</menu>

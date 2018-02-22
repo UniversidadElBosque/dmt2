@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="juan.example.com.diabetest2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA.MOUNTED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icono_normal"
+        android:label="Mi DT2 con Psicoeducación"
+        android:roundIcon="@drawable/icono_normal"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".administrador.Inicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profesional.CrearPaciente" />
+        <activity android:name=".profesional.DiagnosticoInicial" />
+        <activity android:name=".comunes.Usuario" />
+        <activity android:name=".paciente.FyC" />
+        <activity android:name=".profesional.Comorbilidad" />
+        <activity
+            android:name=".profesional.Pacientes"
+            android:screenOrientation="portrait" />
+        <activity android:name=".paciente.ApoyoSocial" />
+        <activity android:name=".paciente.EstiloVida" />
+        <activity android:name=".paciente.ActividadFisica" />
+        <activity android:name=".administrador.acercade" />
+        <activity android:name=".comunes.CrearRecurso" />
+        <activity android:name=".comunes.ModificarRecurso" />
+        <activity
+            android:name=".comunes.Recursos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".paciente.Evolucion" />
+        <activity
+            android:name=".comunes.Mensajes"
+            android:label="Mi DT2 con Psicoeducación"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".paciente.MenuPaciente"
+            android:label="Mi DT2 con Psicoeducación"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profesional.MenuProfesional"
+            android:label="Mi DT2 con Psicoeducación"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".paciente.Animo" />
+        <activity android:name=".comunes.CrearMensaje" />
+        <activity android:name=".comunes.Comunidad" />
+        <activity android:name=".comunes.CrearComunidad" />
+        <activity android:name=".paciente.Aep" />
+        <activity android:name=".comunes.VerRecurso" />
+        <activity android:name=".administrador.Administracion" />
+        <activity android:name=".administrador.CrearProfesional" />
+        <activity android:name=".paciente.DetallePaciente" />
+
+        <service android:name=".administrador.ServicioDT2" />
+
+        <activity android:name=".comunes.DiscusionComunidad" />
+        <activity android:name=".comunes.ComentarTema" />
+        <activity android:name=".profesional.ConsentimientoPro" />
+        <activity android:name=".paciente.Consentimiento" />
+        <activity
+            android:name=".familiar.MenuFamiliar"
+            android:label="Mi DT2 con Psicoeducación"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".comunes.Informacion"
+            android:screenOrientation="portrait" />
+        <activity android:name=".comunes.VerInformacion" />
+        <activity android:name=".paciente.PesoIMC" />
+        <activity android:name=".paciente.Hba1c" />
+        <activity android:name=".profesional.Observaciones" />
+        <activity android:name=".profesional.CrearObservacion" />
+        <activity android:name=".paciente.Metas" />
+        <activity android:name=".paciente.Medicamentos" />
+        <activity android:name=".comunes.HabitosSaludables" />
+        <activity android:name=".paciente.CrearMedicamento" />
+        <activity android:name=".comunes.CrearHabito" />
+        <activity android:name=".comunes.VerHabito" />
+        <activity android:name=".profesional.EncuestaProfesionales"></activity>
+    </application>
+
+</manifest>
