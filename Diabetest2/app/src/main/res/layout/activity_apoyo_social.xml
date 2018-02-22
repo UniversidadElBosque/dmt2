@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.paciente.ApoyoSocial">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_x="18dp"
+                android:layout_y="26dp"
+                android:text="Mi familia me apoya en el proceso de tratamiento"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb1"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="96dp"
+                    android:layout_y="70dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Mis amigos me apoyan en el tratamiento"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb2"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="99dp"
+                    android:layout_y="169dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="19dp"
+                android:layout_y="234dp"
+                android:text="Me siento satisfecho con la manera en que mi familia me apoya en el tratamiento "
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb3"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="375dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="20dp"
+                android:layout_y="333dp"
+                android:text="Tengo con quien hablar sobre mi enfermedad"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb4"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="20dp"
+                android:layout_y="333dp"
+                android:text="¿Me reuno con mis amigos y familiares?"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView165"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb5"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <ImageView
+                    android:id="@+id/imageView45"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView94"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="20dp"
+                android:layout_y="333dp"
+                android:text="Cuento con personas que se preocupan de lo que me sucede"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView166"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb6"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="20dp"
+                android:layout_y="333dp"
+                android:text="Tengo la posibilidad de hablar de mis problemas"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView167"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb7"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <ImageView
+                    android:id="@+id/imageView47"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_x="20dp"
+                android:layout_y="333dp"
+                android:text="Atiendo consejos útiles cuando me ocurre algún acontecimiento importante"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView168"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sb1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sb8"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <ImageView
+                    android:id="@+id/imageView48"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sb2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/hand" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_x="100dp"
+                android:layout_y="443dp"
+                android:onClick="procesar"
+                android:text="Guardar y continuar"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

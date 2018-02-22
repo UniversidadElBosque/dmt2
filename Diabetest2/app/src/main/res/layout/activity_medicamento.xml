@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.paciente.CrearMedicamento">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView115"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Información de mi medicamento"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/id_nombre_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/id_tipo_presentacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/id_dosificacion_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Dosificación (cantidad)"
+                android:inputType="number"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/id_posologia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Posología (Intervalo en horas)"
+                android:inputType="number"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/id_observaciones_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:ems="10"
+                android:hint="Observaciones"
+                android:inputType="textMultiLine"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/id_recordar_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="Recordarme tomar este medicamento"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView125"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Seleccione la hora de inicio"
+                android:textAlignment="center" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/id_bt_guardar_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="procesar"
+                android:text="Guardar o modificar" />
+
+            <Button
+                android:id="@+id/id_bt_borrar_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:onClick="desactivarMedicamento"
+                android:text="Borrar medicamento"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

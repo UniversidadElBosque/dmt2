@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.paciente.ActividadFisica">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_x="18dp"
+                android:layout_y="26dp"
+                android:text="Realizo actividad física  30 minutos al día"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc2"
+                    app:layout_constraintTop_toTopOf="@+id/sbc2"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc1"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="96dp"
+                    android:layout_y="70dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc2"
+                    app:layout_constraintTop_toTopOf="@+id/sbc2"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="19dp"
+                android:layout_y="234dp"
+                android:text="Puedo escoger caminar, montar bicicleta, nadar o correr como parte de mi actividad física."
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc3"
+                    app:layout_constraintTop_toTopOf="@+id/sbc3"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc2"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="99dp"
+                    android:layout_y="180dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc3"
+                    app:layout_constraintTop_toTopOf="@+id/sbc3"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="20dp"
+                android:layout_y="333dp"
+                android:text="Tengo la posibilidad de realizar actividad física con otras personas."
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc3"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="375dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Tengo limitaciones para realizar actividad física"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc4"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Invierto tiempo en mi propio cuidado"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView295"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc5"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/imageView315"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Considero que hago suficiente ejercicio"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView296"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc6"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/imageView316"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Busco información y orientación sobre el manejo de mi enfermedad"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView297"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc7"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/imageView317"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Conózco mis medicamentos y  para que sirven"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView298"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc8"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/imageView318"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_x="17dp"
+                android:layout_y="127dp"
+                android:text="Las medidas que he tomado con respecto a la diabetes permiten garantizar mi bienestar y el de mi familia"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView299"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintRight_toLeftOf="@+id/sbc4"
+                    app:layout_constraintTop_toTopOf="@+id/sbc4"
+                    app:srcCompat="@mipmap/down" />
+
+                <SeekBar
+                    android:id="@+id/sbc9"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_x="101dp"
+                    android:layout_y="277dp"
+                    android:max="5"
+                    android:progress="3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/imageView319"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/sbc1"
+                    app:layout_constraintTop_toTopOf="@+id/sbc1"
+                    app:srcCompat="@mipmap/hand" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_x="111dp"
+                android:layout_y="444dp"
+                android:onClick="procesar"
+                android:text="Guardar y continuar"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbc4" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

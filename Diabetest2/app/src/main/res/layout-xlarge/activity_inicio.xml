@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.administrador.Inicio">
+
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_clave"
+        android:layout_alignLeft="@+id/id_clave"
+        android:layout_alignStart="@+id/id_clave"
+        android:layout_marginBottom="20dp"
+        android:layout_x="287dp"
+        android:layout_y="374dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <EditText
+
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:layout_x="286dp"
+        android:layout_y="431dp"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_correo"
+        android:layout_alignLeft="@+id/id_correo"
+        android:layout_alignStart="@+id/id_correo"
+        android:layout_marginBottom="29dp"
+        android:layout_x="194dp"
+        android:layout_y="278dp"
+        android:text="¡Salud y Bienestar para ti!"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="258dp"
+        android:layout_height="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:layout_x="258dp"
+        android:layout_y="71dp"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/logobosque" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="26dp"
+        android:layout_x="290dp"
+        android:layout_y="163dp"
+        android:text="¡Bienvenido!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="607dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/id_correo"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/id_correo"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView9"
+        android:layout_x="84dp"
+        android:layout_y="227dp"
+        android:text="Esta App está diseñada para el apoyo de las personas con diabetes mellitus tipo 2 y cuenta con el enfoque de la Atención Primaria en Salud así como la psicoeducación. "
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:layout_x="356dp"
+        android:layout_y="501dp"
+        android:onClick="procesar"
+        android:text="Entrar"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+
+</AbsoluteLayout>
+    
