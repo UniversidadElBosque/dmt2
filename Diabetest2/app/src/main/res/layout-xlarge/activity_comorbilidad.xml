@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.profesional.Comorbilidad">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_x="87dp"
+        android:layout_y="21dp"
+        android:text="Comorbilidad"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Diabetes T2 de más de diez años de evolución"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Presencia de algún factor de riesgo adicional para enfermedad arterial coronaria"
+        android:layout_below="@+id/switch1"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_alignEnd="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Enfermedad vascular periférica"
+        android:layout_below="@+id/switch2"
+        android:layout_alignLeft="@+id/switch9"
+        android:layout_alignStart="@+id/switch9" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Neuropatía autonómica"
+        android:layout_below="@+id/switch3"
+        android:layout_alignLeft="@+id/switch3"
+        android:layout_alignStart="@+id/switch3" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presencia de enfernedad microvascular (retinopatía proliferativa o nefropatía, incluyendo microalbuminuria)"
+        android:layout_below="@+id/switch4"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2"
+        android:layout_marginTop="11dp"
+        android:layout_alignRight="@+id/switch2"
+        android:layout_alignEnd="@+id/switch2" />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Diagnóstico reciente de DT2"
+        android:layout_below="@+id/switch5"
+        android:layout_alignLeft="@+id/switch4"
+        android:layout_alignStart="@+id/switch4" />
+
+    <Switch
+        android:id="@+id/switch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Niveles de Hiperglicemia de 220 a 240 mg/dl"
+        android:layout_below="@+id/switch6"
+        android:layout_alignRight="@+id/switch2"
+        android:layout_alignEnd="@+id/switch2"
+        android:layout_alignLeft="@+id/switch5"
+        android:layout_alignStart="@+id/switch5" />
+
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Una función conservada de las células beta del páncreas"
+        android:layout_below="@+id/switch7"
+        android:layout_alignLeft="@+id/switch7"
+        android:layout_alignStart="@+id/switch7"
+        android:layout_alignRight="@+id/switch7"
+        android:layout_alignEnd="@+id/switch7" />
+
+    <Switch
+        android:id="@+id/switch9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Pacientes sin antecedentes de insulinoterapia" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="abrir"
+        android:text="Guardar y terminar"
+        android:layout_below="@+id/switch9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+</RelativeLayout>

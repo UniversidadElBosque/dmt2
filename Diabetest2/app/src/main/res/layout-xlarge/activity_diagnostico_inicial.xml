@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.profesional.DiagnosticoInicial">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="63dp"
+        android:text="Diagnóstico Inicial"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/id_trigliceridos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="234dp"
+        android:ems="10"
+        android:hint="Triglicéridos"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/id_glucemiaCa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="291dp"
+        android:ems="10"
+        android:hint="Glucemia capilar"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/id_talla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="398dp"
+        android:ems="10"
+        android:hint="Talla"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/id_tension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="175dp"
+        android:ems="10"
+        android:hint="Tensión arterial"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="358dp"
+        android:layout_y="466dp"
+        android:onClick="procesar"
+        android:text="Guardar" />
+
+    <EditText
+        android:id="@+id/id_IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="118dp"
+        android:ems="10"
+        android:hint="IMC"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/id_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="345dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="number" />
+
+</AbsoluteLayout>

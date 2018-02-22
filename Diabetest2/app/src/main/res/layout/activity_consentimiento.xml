@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.paciente.Consentimiento">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView93"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consentimiento informado y solicitud de apoyo al tratamiento de la diabetes mellitus tipo 2 "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Dentro de las normas éticas exigidas al profesional médico en Colombia por la ley 23 de 1981 se encuentra el deber de informar adecuada y oportunamente a todos sus pacientes los riesgos que puedan derivarse del tratamiento que le será practicado, solicitando su consentimiento anticipadamente (artículo 15 y 16). Por tanto, con el presente documento escrito se pretende informar a usted y a su familia acerca del procedimiento que se le practicará, por lo cual solicitamos su aceptación y consentimiento para que profesionales legalmente acreditados y competentes en el tratamiento de la diabetes mellitus tipo 2 según los lineamientos del Ministerio de Salud y Protección Social de Colombia, me brinden orientación e información para el tratamiento correcto de mi enfermedad en coherencia con la información que yo proporcione de forma verídica sobre mi situación personal, familiar y social, el apoyo al tratamiento objeto del presente consentimiento informado consiste en: DIAGNOSTIGOS CLÍNICOS: Diagnóstico inicial, comorbilidad y complicaciones.  DIANÓSTICOS PSICOLÓGICOS: Autocuidado,  autoeficacia, actitud frente al cuidado, estados de ánimo, apoyo social, percepción del riesgo, conocimiento sobre la enfermedad DIANÓSTICOS ESPECIALIZADOS DE NUTRICIÓN Y ESTILO DE VIDA: Actividad física, estilos de vida, dieta saludable, MENSAJES PRIVADOS DIRECTOS RELACIONADOS AL TRATAMIENTO. INFORMACIÓN DISEÑADA PARA CAMBIAR EL ESTILO DE VIDA. Otorgo mi consentimiento para que los creadores de esta App, los responsables de su administración y la Universidad El Bosque empleen la información suministrada por mí para propósitos médicos, técnicos y de investigación o lo que se consideren pertinente, sin renunciar a mis derechos a la privacidad y al acceso de la información de historia clínica protegidos por la ley. Comprendo y acepto que durante mi tratamiento pueden aparecer circunstancias imprevisibles o inesperadas, que puedan requerir una extensión del procedimiento original o la realización de otro procedimiento no mencionado arriba, razón por lo cual no puedo responsabilizar a los creadores de la App, sus administradores o la Universidad El Bosque de perjuicios derivados del mal uso de esta herramienta, cuyo fin es el apoyo al tratamiento y no el tratamiento directo de la diabetes mellitus tipo 2. Comprendo y acepto que la responsabilidad del tratamiento es mía y no de la App, sus creadores, administradores o la Universidad El Bosque, ni tampoco se garantiza totalmente los resultados esperados, por ello me comprometo a usar de forma correcta esta herramienta para los propósitos antes mencionados y a asumir mi responsabilidad en su uso. "
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/id_consentimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acepto" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="procesar"
+                android:text="Continuar" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

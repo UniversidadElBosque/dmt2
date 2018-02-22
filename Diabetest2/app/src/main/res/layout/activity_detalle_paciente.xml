@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.paciente.DetallePaciente">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    app:srcCompat="@drawable/application_search" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Id272874393"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:elevation="1dp"
+                        android:text="Informe General"
+                        android:textAlignment="center"
+                        android:textColor="?attr/actionModeSplitBackground"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView130"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Información personal sobre las condiciones capturadas para el apoyo al tratamiento"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/datos_generales" />
+
+            <ListView
+                android:id="@+id/id_datosUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_weight="1"
+                android:divider="@drawable/line_gray"
+                android:scrollbars="vertical" />
+
+            <ImageView
+                android:id="@+id/imageView93"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/diagnostico_inicial" />
+
+            <ListView
+                android:id="@+id/id_di"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical" />
+
+            <ImageView
+                android:id="@+id/imageView94"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/comorbilidad" />
+
+            <ListView
+                android:id="@+id/id_comorbilidad"
+                android:layout_width="match_parent"
+                android:layout_height="320dp" />
+
+            <ImageView
+                android:id="@+id/imageView95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fyc" />
+
+            <ListView
+                android:id="@+id/id_fyc"
+                android:layout_width="match_parent"
+                android:layout_height="340dp" />
+
+            <ImageView
+                android:id="@+id/imageView96"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/apoyo_social" />
+
+            <ListView
+                android:id="@+id/id_apoyo_social"
+                android:layout_width="match_parent"
+                android:layout_height="390dp" />
+
+            <ImageView
+                android:id="@+id/imageView97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dieta_nutricion" />
+
+            <ListView
+                android:id="@+id/id_dieta_nutricion"
+                android:layout_width="match_parent"
+                android:layout_height="520dp" />
+
+            <ImageView
+                android:id="@+id/imageView98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/actividad_fisica" />
+
+            <ListView
+                android:id="@+id/id_actividad_fisica"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+
+            <ImageView
+                android:id="@+id/imageView99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/autocuidado" />
+
+            <ListView
+                android:id="@+id/id_autocuidado"
+                android:layout_width="match_parent"
+                android:layout_height="235dp" />
+
+            <ImageView
+                android:id="@+id/imageView102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/autoeficacia" />
+
+            <ListView
+                android:id="@+id/id_autoeficacia"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+            <ImageView
+                android:id="@+id/imageView100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/estado_animo" />
+
+            <ListView
+                android:id="@+id/id_estado_animo"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <ImageView
+                android:id="@+id/imageView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/percecion_riesgo" />
+
+            <ListView
+                android:id="@+id/id_percepcion_riesgo"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+            <Button
+                android:id="@+id/id_bt_enviar_informe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviarMail"
+                android:text="Enviar informe por correo" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

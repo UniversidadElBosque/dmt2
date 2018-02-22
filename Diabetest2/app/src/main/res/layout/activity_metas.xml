@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_metas"
+    tools:context="juan.example.com.diabetest2.paciente.Metas">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/blanco50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mis metas"
+                android:textAlignment="center"
+                android:textColor="?attr/actionModeSplitBackground"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Cuando se activa una meta, usted recibirá un recordatorio para cumplirla"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/id_meta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mejorar mi medida de HbA1c" />
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Activa una recordación semanal"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Switch
+                android:id="@+id/id_meta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ejercitarme 30 minutos al día" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Activa recordación diaria"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorPrimary"
+                android:foreground="@color/naranja"
+                android:padding="8dp" />
+
+            <Switch
+                android:id="@+id/id_meta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comer menos de una cucharadita de sal al día" />
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Activa recordación diaria"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Switch
+                android:id="@+id/id_meta4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dejar de fumar" />
+
+            <TextView
+                android:id="@+id/textView108"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Activa recordación cada tres días"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Switch
+                android:id="@+id/id_meta5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dejar de beber alcohol" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Activa recordación semanal"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Switch
+                android:id="@+id/id_meta6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alcanzar un índice masa corporal (IMC) de 25kg/m2" />
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Activa una recordación cada cuatro días"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="procesar"
+                android:text="Guardar o modificar" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

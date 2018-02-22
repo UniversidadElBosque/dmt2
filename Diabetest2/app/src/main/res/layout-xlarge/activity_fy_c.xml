@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="juan.example.com.diabetest2.paciente.FyC">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="209dp"
+        android:layout_y="82dp"
+        android:text="¿Es una persona que fuma?"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="438dp"
+        android:layout_y="78dp"
+        android:text="No" />
+
+    <EditText
+        android:id="@+id/aCuantos"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="112dp"
+        android:ems="10"
+        android:hint="¿Cuántos?"
+        android:inputType="number" />
+
+    <RadioButton
+        android:id="@+id/aDiario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="336dp"
+        android:layout_y="119dp"
+        android:text="diarios" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="415dp"
+        android:layout_y="119dp"
+        android:text="semanales" />
+
+    <RadioButton
+        android:id="@+id/fSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="492dp"
+        android:layout_y="78dp"
+        android:text="Si" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="289dp"
+        android:layout_y="506dp"
+        android:onClick="abrir"
+        android:text="Guardar y Continuar" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="181dp"
+        android:text="¿Conoce las consecuencias de fumar?"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="243dp"
+        android:text="Si, son laborales" />
+
+    <RadioButton
+        android:id="@+id/cNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="355dp"
+        android:layout_y="296dp"
+        android:text="No" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="412dp"
+        android:layout_y="296dp"
+        android:text="Si" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="209dp"
+        android:layout_y="302dp"
+        android:text="¿Bebe alcohol?"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_x="208dp"
+        android:layout_y="335dp"
+        android:text="¿Conoce las consecuencias de consumir alcohol?"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/bFisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="208dp"
+        android:layout_y="382dp"
+        android:text="Si, son físicas" />
+
+    <CheckBox
+        android:id="@+id/dFisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="210dp"
+        android:text="Si, son físicas" />
+
+    <CheckBox
+        android:id="@+id/bFamiliar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="345dp"
+        android:layout_y="210dp"
+        android:text="Si, son familiares" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="208dp"
+        android:layout_y="414dp"
+        android:text="Si, son familiares" />
+
+    <CheckBox
+        android:id="@+id/dLaboral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="208dp"
+        android:layout_y="446dp"
+        android:text="Si, son laborales" />
+
+</AbsoluteLayout>
+<!--
+
+-->
